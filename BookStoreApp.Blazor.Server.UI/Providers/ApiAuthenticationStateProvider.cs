@@ -5,12 +5,12 @@ using System.Security.Claims;
 
 namespace BookStoreApp.Blazor.Server.UI.Providers
 {
-    public class ApiAuthentificationStateProvider : AuthenticationStateProvider
+    public class ApiAuthenticationStateProvider : AuthenticationStateProvider
     {
         private readonly ILocalStorageService localStorage;
         private readonly JwtSecurityTokenHandler jwtSecurityTokenHandler;
 
-        public ApiAuthentificationStateProvider(ILocalStorageService localStorage)
+        public ApiAuthenticationStateProvider(ILocalStorageService localStorage)
         {
             this.localStorage = localStorage;
             jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
