@@ -16,4 +16,5 @@ namespace BookStoreApp.Blazor.Server.UI.Services
 
         Task<Response<int>> Delete(int id);
     }
+
 }
